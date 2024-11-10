@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #A7A7A7;
+    padding: 15px;
+    width: 300px;
+}
+
+.sidebar button:hover{
+    background-color: #777272;
+    transition: 0.2s ease-in;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #111;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.candidate-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    display: none; 
+    border-radius: 30px;
+}
+
+.candidate-card h3{
+    font-size: 25px;
+}
+
+.candidate-card p{
+    font-size: 20px;
+}
+
+.candidate-card.active {
+    display: block; 
+ }
+
+

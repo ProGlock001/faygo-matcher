@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
+    <title>Faygo-matcher</title>
+    <link rel="stylesheet" href="static/css/registration.css">
+</head>
+<body>
+
+    <div class="container" id="registration-container">
+        <h2>Регистрация</h2>
+        <form id="registration-form">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="name">Имя Фамилия</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="username">Логин</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Повторите пароль</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button href="index.html" type="submit" class="btn"><a href="index.html">Зарегистрироваться</a></button>
+            <div class="link">
+                Уже есть аккаунт? <a href="#" onclick="toggleForms()">Войти</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="login-container" style="display: none;">
+        <h2>Вход</h2>
+        <form id="login-form">
+            <label for="login-username">Логин</label>
+            <input type="text" id="login-username" name="login-username" required>
+
+            <label for="login-password">Пароль</label>
+            <input type="password" id="login-password" name="login-password" required>
+
+            <button  type="submit" class="btn"><a href="index.html">Войти</a></button>
+            <div class="link">
+                Нет аккаунта? <a href="#" onclick="toggleForms()">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+
+<script src="static/script.js"></script>
+</body>
+</html>

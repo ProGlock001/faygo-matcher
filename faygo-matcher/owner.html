@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/img/favicon.png" type="image/x-icon">
+    <title>Faygo-matcher</title>
+    <link rel="stylesheet" href="static/css/owner.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button onclick="showProfession('all')">All</button>
+            <button onclick="showProfession('Маркетолог')">Маркетолог</button>
+            <button onclick="showProfession('Аналитик данных')">Аналитик данных</button>
+            <button onclick="showProfession('Предприниматель')">Предприниматель</button>
+            <button onclick="showProfession('Менеджер по проектам')">Менеджер по проектам</button>
+            <button onclick="showProfession('Психолог')">Психолог</button>
+            <button onclick="showProfession('Операционный менеджер')">Операционный менеджер</button>
+            <button onclick="showProfession('Творческий директор')">Творческий директор</button>
+            <button onclick="showProfession('Дизайнер')">Дизайнер</button>
+            <button onclick="showProfession('Инженер')">Инженер</button>
+            <button onclick="showProfession('Менеджер по работе с клиентами')">Менеджер по работе с клиентами</button>
+        </div>
+        <div class="main-content">
+            <div class="filter">
+                <select id="filterSelect" onchange="filterCandidates()">
+                    <option value="all">All</option>
+                    <option value="experience_high">High Experience</option>
+                    <option value="age_30_plus">Age 30+</option>
+                </select>
+            </div>
+            <div id="candidates">
+                <!-- Candidate cards with profession categorization -->
+                <div class="candidate-card" data-profession="Маркетолог" data-age="32" data-experience="5">
+                    <h3>Маркетолог</h3>
+                    <p>Age: 32</p>
+                    <p>Experience: 5 years</p>
+                    <p>Company: Marketing Experts</p>
+                </div>
+                <div class="candidate-card" data-profession="Аналитик данных" data-age="28" data-experience="3">
+                    <h3>Аналитик данных</h3>
+                    <p>Age: 28</p>
+                    <p>Experience: 3 years</p>
+                    <p>Company: Data Insights</p>
+                </div>
+                <div class="candidate-card" data-profession="Предприниматель" data-age="45" data-experience="20">
+                    <h3>Предприниматель</h3>
+                    <p>Age: 45</p>
+                    <p>Experience: 20 years</p>
+                    <p>Company: Startup Ventures</p>
+                </div>
+                <div class="candidate-card" data-profession="Менеджер по проектам" data-age="35" data-experience="8">
+                    <h3>Менеджер по проектам</h3>
+                    <p>Age: 35</p>
+                    <p>Experience: 8 years</p>
+                    <p>Company: Project Solutions</p>
+                </div>
+                <div class="candidate-card" data-profession="Психолог" data-age="40" data-experience="15">
+                    <h3>Психолог</h3>
+                    <p>Age: 40</p>
+                    <p>Experience: 15 years</p>
+                    <p>Company: Health Minds</p>
+                </div>
+                <div class="candidate-card" data-profession="Операционный менеджер" data-age="38" data-experience="10">
+                    <h3>Операционный менеджер</h3>
+                    <p>Age: 38</p>
+                    <p>Experience: 10 years</p>
+                    <p>Company: Operations Inc.</p>
+                </div>
+                <div class="candidate-card" data-profession="Творческий директор" data-age="42" data-experience="18">
+                    <h3>Творческий директор</h3>
+                    <p>Age: 42</p>
+                    <p>Experience: 18 years</p>
+                    <p>Company: Creative Solutions</p>
+                </div>
+                <div class="candidate-card" data-profession="Дизайнер" data-age="27" data-experience="4">
+                    <h3>Дизайнер</h3>
+                    <p>Age: 27</p>
+                    <p>Experience: 4 years</p>
+                    <p>Company: Design Studio</p>
+                </div>
+                <div class="candidate-card" data-profession="Инженер" data-age="34" data-experience="9">
+                    <h3>Инженер</h3>
+                    <p>Age: 34</p>
+                    <p>Experience: 9 years</p>
+                    <p>Company: Engineering Works</p>
+                </div>
+                <div class="candidate-card" data-profession="Менеджер по работе с клиентами" data-age="30" data-experience="6">
+                    <h3>Менеджер по работе с клиентами</h3>
+                    <p>Age: 30</p>
+                    <p>Experience: 6 years</p>
+                    <p>Company: Client Relations Co.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
